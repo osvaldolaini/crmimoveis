@@ -1,0 +1,76 @@
+.boxEmail, .boxReminder { display: none; }
+.event-table{
+	color: #000;
+    width:25px;
+    height: 25px;
+    line-height: 25px;
+	border-radius: 50%;
+	border: solid 1px #000;
+    cursor: pointer;
+    display: block;
+    font-size: 0.9em;
+    overflow: hidden;
+    position: absolute!important;
+    text-align: center;
+	z-index: 1001;
+	align-items: center;
+	background-color: #ffffff !important;
+}
+.master-table{
+	color: #000;
+    width:60px;
+	height: 60px;
+    line-height: 60px;
+	border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    position: absolute!important;
+    text-align: center;
+	z-index: 999;
+}
+.chairs {
+	padding:0px;
+	height: 25px;
+	position: absolute;
+	top: 17px;
+	left: 21px;
+	display: flex;
+	align-items: flex-end;
+	cursor:pointer;
+}
+.chairs i{
+	padding-bottom: 25px;
+}
+.reserved{
+	transition: 0.5s ease-in-out;
+	margin-left:-1px;
+	font-size: 13pt;
+	color: rgb(219, 182, 17);
+}
+.free{
+	transition: 0.5s ease-in-out;
+	color: rgba(98, 212, 5, 0.959);
+}
+.buy{
+	color: rgb(184, 54, 31);
+}
+
+#imageMap{
+	width:100%;
+	margin: 0; 
+	border: none; 
+	top: 0; 
+	left: 0; 
+	z-index: 500;
+}
+
+#mapHolder{
+	position: relative; 
+	overflow: hidden; 
+	min-height: 500px; 
+	/*margin: 0 auto;*/
+	border: 1px solid #000;
+	border-radius: 10px;
+	padding: 5px;
+}

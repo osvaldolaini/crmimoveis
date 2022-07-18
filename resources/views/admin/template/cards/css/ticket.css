@@ -1,0 +1,69 @@
+
+#ticketHolder{
+	position: relative; 
+	overflow: hidden;
+	margin: auto;
+	padding: 0;
+	width: 700px;
+	height: 990px;
+	/*margin: 0 auto;*/
+	border: 1px solid #000;
+	border-radius: 10px;
+	align-items: center;
+}
+#ticketHolder label{
+	margin: 0;
+	padding: 0;
+}
+#ticketHolder p{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 10px;
+}
+#ticketImage{
+	width:100%;
+	height:100%;
+	margin: 0;
+	padding: 0;
+	border: none; 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	z-index: 500;
+}
+
+.tickets{
+    cursor: pointer;
+    display: block;
+    font-size: 0.9em;
+    overflow: hidden;
+    position: absolute!important;
+	z-index: 1000;
+	margin: 0;
+	padding: 0;
+}
+.tickets:hover{
+	border: 2px dotted #00F; 
+	background-color: rgba(32, 83, 223, 0.562)
+}
+.ticketsPrint{
+    cursor: pointer;
+    display: block;
+    font-size: 0.9em;
+    overflow: hidden;
+    position: absolute!important;
+	z-index: 1000;
+	margin: 0;
+	padding: 0;
+}
+#ticketHolderView{
+	position: relative; 
+	overflow: hidden;
+	width: 500px;
+	min-height: 500px; 
+	/*margin: 0 auto;*/
+	border: 1px solid #000;
+	border-radius: 10px;
+	padding: 0px;
+}
+

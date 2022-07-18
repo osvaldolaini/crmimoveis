@@ -1,0 +1,59 @@
+*{
+  margin: 0px;
+  padding:0px;
+  font-family: arial;
+}
+.receipt-body{
+	margin-top: 20px;
+	width: 100%;
+}
+.receipt-body table{
+	width: 100%;
+}
+.receipt-body table td{
+	border-bottom: solid thin #000;
+}
+.dashed{
+	  margin: 20px;
+	border-bottom: dashed thin #000;
+}
+.receipt-head{
+  padding:1.5pt;
+}
+.imagem{
+	width:20%;
+	float: left;
+	border-right: solid thin #000;
+	padding-right: 10px;
+}
+i{
+	min-width: 100%;
+	border-bottom: solid thin #000;
+}
+h6, h5, h4, h3, h2{
+	margin: 0px;
+  	padding:0px;
+}
+p{
+	font-size: 7pt;
+	margin:0px;
+  	padding:0px;
+}
+.titulo{
+	width:50%;
+	float: left;
+	text-align:center;
+}
+.rec{
+	font-weight: 400px;
+	float: left;
+	text-align:center;
+}
+.valor{
+	margin-top: 10px;
+	width:100%;
+	border: solid 1px #000;
+	text-align:left;
+	padding: 5px;
+	float: bottom;
+}

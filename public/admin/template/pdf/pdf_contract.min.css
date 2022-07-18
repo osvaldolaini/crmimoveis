@@ -1,0 +1,77 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'dejavusans';
+	font-size: 12px;
+}
+.pdf-header #img{
+    width: 100%;
+}
+.pdf-header #about{
+    width: 100%;
+    font-size: 12pt;
+}
+.pdf-header #about h6, h4{
+    margin: 0px;
+	padding: 0px;
+}
+.value{
+    white-space: nowrap;
+}
+.content-wrapper{
+	margin-left: 10px;
+	width:100%;
+	text-align: center;
+	/*border:solid thin #000;*/
+}
+.table-informations{
+    border:solid 2px #000;
+    font-size:8pt;
+    text-align: center;
+    width:100%;
+}
+td{
+    padding: 0 5px;
+}
+.pdf-body{
+    width:100%;
+}
+#contract{
+	width:100%;
+	border:solid 2px #000;
+}
+#contract td{
+	border:solid thin #000;
+}
+th {
+	text-align: center;
+	border:solid thin #000;
+}
+#clausula{
+	text-align: justify;
+	margin-top: 10px;
+}
+.contract{
+	width:100%;
+	border:solid 2px #000;
+}
+.contract body{
+	width:100%;
+}
+.contract td{
+	border:solid thin #000;
+}
+.table-signature{
+    margin-top:50px;
+    font-size:10pt;
+    text-align: center;
+    width:100%;
+} 
+#pag{
+	text-align: center;
+}
+#pag td{
+	border:solid thin #000;
+	font-size: 6pt;
+}
+

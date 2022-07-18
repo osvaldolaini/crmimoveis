@@ -1,0 +1,99 @@
+*{
+  margin: 0px;
+  padding:0px;
+  font-family: arial;
+}
+.carteirinha{
+  width: 100%;
+}
+.cartao {
+  width: 9.5cm;
+  height: 6cm;
+  margin-top: 0px;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-bottom: 0.5cm;
+  float: left;
+  /*background-image: url('assets/css/img/logo.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-image-opacity: 0.3;*/
+}
+.logo{
+  margin-top: 0.125cm;
+  margin-left: 0.125cm;
+  width:1.5cm;
+  width:1.5cm;
+  float:left;
+}
+.frente{
+  margin-top: 0.125cm;
+  margin-left: 0.125cm;
+  width: 9cm;
+  height: 6.2cm;
+  float:left;
+}
+.verso{
+  background-image: url('storage/images/logos/img2.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-image-opacity: 0.3;
+  margin-top: 0.125cm;
+  width: 9cm;
+  height: 6.2cm;
+  float:left;
+}
+
+.dadosVerso{
+    width: 8cm;
+    height: 3cm;
+    margin-left: 0.2cm;
+    float:left;
+
+}
+.assinatura{
+
+    width: 100%;
+    height: 2cm;
+    margin-left: 0.2cm;
+    float:left;
+}
+p {
+  padding: 0px;
+  margin: 0px;
+  font-size: 7pt;
+  font-family: arial;
+}
+.cabecalho-frente{
+  margin-top: 0.2cm;
+  width: 100%;
+  height: 1cm;
+  text-align: center;
+  font-family: arial;
+  font-style: bold;
+  font-size: 8pt;
+  margin-bottom: 0.2cm;
+}
+.dados{
+    width: 5.7cm;
+    height: 3cm;
+    margin-left: 0.2cm;
+    float:left;
+}
+.dados td {
+    font-family: arial;
+    font-size: 8pt;}
+.foto{
+    width: 2.5cm;
+    height: 3cm;
+    margin-left: 0.2cm;
+    /*border:solid 1px #000;*/
+    float:left;
+}
+.foto img{
+    height: 100%;
+}
+
+
+
+

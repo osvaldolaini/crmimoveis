@@ -1,0 +1,130 @@
+.boxEmail, .boxReminder { display: none; }
+.event-table{
+	color: #FFFFFF;
+    width:30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    font-size: 0.9em;
+    overflow: hidden;
+    position: absolute!important;
+    text-align: center;
+	z-index: 1000;
+	align-items: center;
+	box-shadow: inset -2px -2px 4px rgba(255,255,255,0.1),
+				inset 2px 2px 4px rgba(0,0,0,0.8);
+	-webkit-box-shadow: inset -2px -2px 4px rgba(255,255,255,0.1),
+						inset 2px 2px 4px rgba(0,0,0,0.8);
+	-moz-box-shadow: 	inset -2px -2px 4px rgba(255,255,255,0.1),
+						inset 2px 2px 4px rgba(0,0,0,0.8);
+}
+.event-table:hover
+{
+	box-shadow: -2px -2px 4px rgba(255,255,255,0.1),
+				2px 2px 4px rgba(0,0,0,0.8);
+	-webkit-box-shadow: -2px -2px 4px rgba(255,255,255,0.1),
+						2px 2px 4px rgba(0,0,0,0.8);
+	-moz-box-shadow: 	-2px -2px 4px rgba(255,255,255,0.1),
+						2px 2px 4px rgba(0,0,0,0.8);
+}
+.new-table {
+	background-color: #00BFFF !important;
+}
+.old-table {
+	background-color: #46e246 !important;
+}
+.excluded-table {
+	background-color: #d33333 !important;
+	position: relative !important;
+}
+
+.info{
+	/*background-color: #007bff !important;*/
+	width:100px;
+	min-height: 130px;
+	transition: all 1s ease-out;
+	border-radius: 10%;
+	font-size: 10px;
+	padding-top:5px;
+	margin: 0;
+	position: absolute!important;
+	z-index: 1001;
+}
+.info input{
+	width: 50px;
+	height: 20px;
+	color: #007bff;
+	background-color: #ffffff;
+	border: solid thin  #007bff;
+	border-radius: 5px;
+	text-align: center;
+	margin: 0;
+	margin-right: auto;
+	font-size: 12px;
+}
+
+.info span p{
+	margin: -10px;
+}
+.info span i{
+	margin: -5px;
+	padding:-1px;
+}
+#showTable span{
+	cursor: pointer;
+}
+#imageMap{
+	width:100%;
+    height:100%;
+	margin: 0;
+	border: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 500;
+}
+
+#mapHolder{
+	position: relative;
+	overflow: hidden;
+	min-height: 500px;
+	/*margin: 0 auto;*/
+	border: 1px solid #000;
+	border-radius: 10px;
+	padding: 5px;
+}
+#boxExcluded{
+	position: relative;
+	overflow: hidden;
+	min-height: 500px;
+	/*margin: 0 auto;*/
+	border: 1px solid #000;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 0px;
+}
+
+.excluded-chair{
+	color: rgb(184, 54, 31);
+}
+.box-excluded-chairs {
+	padding: 0px;
+	margin: 5 0px;
+}
+.hr {
+      border-top: 1px dashed #f00;
+      border-bottom: 1px solid #f00;
+      color: #fff;
+      background-color: #fff;
+      height: 2px;
+      padding: 0px;
+	  margin: 0px;
+    }
+.box-excluded-chairs .fields{
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	align-items: center;
+}
