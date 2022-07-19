@@ -13,20 +13,18 @@
 {{-- Setup data for datatables --}}
 @php
 $heads = [
-    'OM - Grupo',
-    'Marca - Modelo',
-    'Placa',
+    'Assinante',
     ['label' => 'Ativo', 'no-export' => true],
     ['label' => 'Opções', 'no-export' => true, 'width' => 5],
 ];
 
 $config = [
-    'language'=>[['url' => 'https://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Portuguese-Brasil.json']],
     'data' => $data,
     'order' => [[0, 'asc']],
-    'lengthMenu' => [15, 20, 30],
-    'columns' => [null, null, null, null,['orderable' => false]],
+    'lengthMenu' => [10,20,30],
+    'columns' => [null, null,['orderable' => false]],
 ];
+
 @endphp
 
 @section('content')
@@ -41,8 +39,11 @@ $config = [
         <div class="card">
             <div class="card-body">
                 <!-- Inicio do conteúdo-->
-                <x-adminlte-datatable id="table8" :heads="$heads" head-theme="dark" theme="info"  :config="$config"
-                    striped hoverable with-buttons/>
+                @if (Auth::user()->group->level <= $accesslevel)
+                    <x-adminlte-datatable id="table8" :heads="$heads" head-theme="dark" theme="info"  :config="$config" striped hoverable with-buttons/>
+                @else
+                    <x-adminlte-datatable id="table8" :heads="$heads" head-theme="dark" theme="info"  :config="$config" striped hoverable />
+                @endif
             </div>
         </div>
     </div>

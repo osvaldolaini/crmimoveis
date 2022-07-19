@@ -22,15 +22,23 @@ Route::group(['namespace' => 'Admin','middleware' => ['auth','RegisterLogging']]
     Route::get('/', 'HomeController@index')->name('admin.home');
     Route::get('/home', 'HomeController@index')->name('admin.home');
     Route::get('/painel-admin', 'HomeController@index')->name('admin.home');
-    Route::get('/configuracoes','ConfigController@index')->name('admin.config.index')->middleware('AccessLevel:1');
+    Route::get('/configuracoes','ConfigController@index')->name('config.index')->middleware('AccessLevel:1');
     Route::post('/configuracoes/{config}','ConfigController@update')->name('config.update')->middleware('AccessLevel:1');
     Route::post('/uploads','UploadController@upload')->name('uploads');
     Route::resource('/usuarios','UserController')->names('user')->parameters(['usuarios' => 'user'])->middleware('AccessLevel:10');
 
+    Route::resource('/midias-sociais','SocialMediaController')->names('socialMedia')->parameters(['midias-sociais' => 'socialMedia'])->middleware('AccessLevel:10');
+    Route::resource('/emails','EmailController')->names('email')->parameters(['emails' => 'email'])->middleware('AccessLevel:10');
+    Route::resource('/assinantes','SubscriberController')->names('subscriber')->parameters(['assinantes' => 'subscriber'])->middleware('AccessLevel:10');
+    Route::resource('/views','ViewController')->names('view')->parameters(['views' => 'view'])->middleware('AccessLevel:10');
+
     /*Envio de ameil */
     Route::post('/send-response/{email}','EmailController@response')->name('email.response')->middleware('AccessLevel:10');
-    Route::post('/send-news','SubscriberController@sendMail')->name('subscriber.sendMail')->middleware('AccessLevel:10');
+
 });
+
+    Route::post('/enviar-email', 'Admin\EmailController@store')->name('email.store');
+    Route::post('/newsletter', 'Admin\SubscriberController@store')->name('subscriber.store');
 
 
 Route::group(['namespace' => 'Admin','middleware' => ['auth','RegisterLogging']], function () {

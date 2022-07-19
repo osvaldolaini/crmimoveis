@@ -1,6 +1,6 @@
 @extends('adminlte::master')
 {{--Plugin Recaptcha v3--}}
-@section('plugins.ReCAPTCHAv3', true)
+{{-- @section('plugins.ReCAPTCHAv3', true) --}}
 
 @php( $dashboard_url = View::getSection('dashboard_url') ?? config('adminlte.dashboard_url', 'home') )
 
@@ -18,7 +18,7 @@
 @section('classes_body'){{ ($auth_type ?? 'login') . '-page bg-light' }}@stop
 
 @section('body')
-    <div class="{{ $auth_type ?? 'login' }}-box">
+    <div class="{{ $auth_type ?? 'login' }}-box" >
 
         {{-- Logo --}}
         <div class="{{ $auth_type ?? 'login' }}-logo">

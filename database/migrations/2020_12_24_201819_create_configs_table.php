@@ -16,10 +16,16 @@ class CreateConfigsTable extends Migration
         Schema::create('configs', function (Blueprint $table) {
             $table->id();
             $table->string('title',100)->nullable();
+            $table->string('slug',100)->nullable();
             $table->string('acronym',50)->nullable();
             $table->string('image',100)->nullable();
             $table->string('creci',100)->nullable();
             $table->string('cpf_cnpj',100)->nullable();
+            $table->string('email')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('cellphone')->nullable();
+            $table->string('whatsapp')->nullable();
+            $table->string('telegram')->nullable();
             $table->string('favicon',100)->nullable();
             $table->longText('about')->nullable();
             $table->string('slug',150)->nullable();

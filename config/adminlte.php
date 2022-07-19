@@ -51,6 +51,7 @@ return [
     'logo_img_xl' => 'storage/images/site/logo_small_text.png',
     'logo_img_xl_class' => 'brand-image-xs',
     'logo_img_alt' => 'CRM - IMÓVEIS',
+    'background_img_xl' => 'storage/images/site/background-4.jpg',
 
     /*
     |--------------------------------------------------------------------------
@@ -292,8 +293,7 @@ return [
                 ],
             ]
             ],
-
-        /*hr personalizado */
+             /*hr personalizado */
         [
             'accesslevel' => 10,
             'header'   => '',
@@ -304,8 +304,45 @@ return [
         /*fim hr personalizado */
         [
             'accesslevel' => 5,
+            'header' => 'Divulgação'
+        ],
+        [
+            'accesslevel' => 10,
+            'text'  => 'Mídias sociais',
+            'url'   => 'midias-sociais',
+            'icon'  => 'fas fa-hashtag',
+            'active'=> ['Mídias sociais', 'Mídias sociais*', 'regex:@^Mídias sociais/[0-9]+$@'],
+        ],
+        [
+            'accesslevel' => 10,
+            'text'  => 'Assinantes',
+            'url'   => 'assinantes',
+            'icon'  => 'far fa-newspaper',
+            'active'=> ['assinantes', 'assinantes*', 'regex:@^assinantes/[0-9]+$@'],
+        ],
+        [
+            'accesslevel' => 10,
+            'text'  => 'Emails',
+            'url'   => 'emails',
+            'icon'  => 'fas fa-mail-bulk',
+            'active'=> ['emails', 'emails*', 'regex:@^emails/[0-9]+$@'],
+        ],
+
+        /*hr personalizado */
+        [
+            'accesslevel' => 10,
+            'header'   => '',
+            'text'     =>'hr',
+            'classes'  => 'border-bottom border-secondary mx-2 pt-1 pb-0',
+        ],
+
+
+        /*fim hr personalizado */
+        [
+            'accesslevel' => 5,
             'header' => 'system_settings'
         ],
+
         [
             'accesslevel' => 5,
             'icon'    => 'fas fa-cogs',
@@ -572,6 +609,16 @@ return [
                     'type' => 'js',
                     'asset' => true,
                     'location' => 'admin/js/main_admin.min.js',
+                ],
+            ],
+        ],
+        'App_views'   => [
+            'active' => false,
+            'files' => [
+                [
+                    'type' => 'js',
+                    'asset' => true,
+                    'location' => 'admin/js/app_views.min.js',
                 ],
             ],
         ],

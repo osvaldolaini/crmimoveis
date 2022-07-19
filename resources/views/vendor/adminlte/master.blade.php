@@ -75,7 +75,7 @@
 
 </head>
 
-<body class="@yield('classes_body')" @yield('body_data')>
+<body class="@yield('classes_body')" @yield('body_data') style='background-image:url("{{ url(config('adminlte.background_img_xl')) }}");background-size:cover;'>
 
     {{-- Body Content --}}
     @yield('body')

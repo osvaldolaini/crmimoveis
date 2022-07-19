@@ -20,13 +20,21 @@
                     <!-- Inicio do formulário-->
                     <form action="" method="post" class="save" data-table="configuracoes" data-id="{{ old('id', $config->id ?? '') }}" accept-charset="utf-8" enctype="multipart/form-data">
                         <div class="row">
-                            <div class="col">
+                            <div class="col-lg-4">
                                 <label for="title">*Nome completo</label>
-                                <input class="form-control" placeholder="Nome do time" name="title" required="true" maxlength="100" value="{{ old('title', $config->title ?? '') }}">
+                                <input class="form-control" placeholder="Nome completo" name="title" required="true" maxlength="100" value="{{ old('title', $config->title ?? '') }}">
+                            </div>
+                            <div class="col-lg-4">
+                                <label for="acronym">*Nome curto</label>
+                                <input class="form-control" placeholder="Nome curto" name="acronym"  value="{{ old('acronym', $config->acronym ?? '') }}">
                             </div>
                             <div class="col">
-                                <label for="nick">*Nome curto</label>
-                                <input class="form-control" placeholder="Nome do time" name="nick"  value="{{ old('nick', $config->nick ?? '') }}">
+                                <label for="cpf_cnpj">CNPJ</label>
+                                <input class="form-control cnpj" placeholder="CNPJ" name="cpf_cnpj"  value="{{ old('cpf_cnpj', $config->cpf_cnpj ?? '') }}">
+                            </div>
+                            <div class="col">
+                                <label for="creci">Creci</label>
+                                <input class="form-control" placeholder="Creci" name="creci"  value="{{ old('creci', $config->creci ?? '') }}">
                             </div>
                         </div>
                         <div class="row">
@@ -64,35 +72,35 @@
                         <div class="row">
                             <div class="col-lg-2">
                                 <label for="postalCode">CEP</label>
-                                <input class="form-control" maxlength="10" placeholder="CEP" name="postalCode" value="{{ old('postalCode', $address->postalCode ?? '') }}">
+                                <input class="form-control" maxlength="10" placeholder="CEP" name="postalCode" value="{{ old('postalCode', $config->postalCode ?? '') }}">
                             </div>
                             <div class="col-lg-8">
                                 <label for="address">Rua</label>
-                                <input class="form-control" placeholder="Rua, Av, Travessa, etc" name="address" value="{{ old('address', $address->address ?? '') }}">
+                                <input class="form-control" placeholder="Rua, Av, Travessa, etc" name="address" value="{{ old('address', $config->address ?? '') }}">
                             </div>
                             <div class="col-lg-2">
                                 <label for="number">Número</label>
-                                <input class="form-control" placeholder="nº" name="number" value="{{ old('number', $address->number ?? '') }}">
+                                <input class="form-control" placeholder="nº" name="number" value="{{ old('number', $config->number ?? '') }}">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-6">
                                 <label for="about">Bairro</label>
-                                <input class="form-control" placeholder="Bairro" name="district" value="{{ old('district', $address->district ?? '') }}">
+                                <input class="form-control" placeholder="Bairro" name="district" value="{{ old('district', $config->district ?? '') }}">
                             </div>
                             <div class="col-lg-6">
                                 <label for="city">Cidade</label>
-                                <input class="form-control" placeholder="Cidade" name="city"  value="{{ old('city', $address->city ?? '') }}">
+                                <input class="form-control" placeholder="Cidade" name="city"  value="{{ old('city', $config->city ?? '') }}">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-10">
                                 <label for="complement">Complemento</label>
-                                <input class="form-control" placeholder="Complemento" name="complement" value="{{ old('complement', $address->complement ?? '') }}">
+                                <input class="form-control" placeholder="Complemento" name="complement" value="{{ old('complement', $config->complement ?? '') }}">
                             </div>
                             <div class="col-lg-2">
                                 <label for="state">Estado</label>
-                                <input class="form-control" placeholder="UF" name="state" maxlength="2" value="{{ old('state', $address->state ?? '') }}">
+                                <input class="form-control" placeholder="UF" name="state" maxlength="2" value="{{ old('state', $config->state ?? '') }}">
                             </div>
                         </div>
                         <div class="row">

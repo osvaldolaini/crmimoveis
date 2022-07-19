@@ -21,10 +21,6 @@ class Config extends Model
         $this->attributes['title']=$value;
         $this->attributes['slug']=Str::slug($value);
     }
-    public function addresses()
-    {
-        return $this->hasMany(ConfigAddress::class,'config_id','id');
-    }
 
     protected $fillable = [
         'title', 'email', 'favicon',

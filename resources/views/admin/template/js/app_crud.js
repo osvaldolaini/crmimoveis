@@ -82,9 +82,9 @@ var App_crud = function() {
                                             //position: 'top-end',
                                             icon: 'success',
                                             title: 'Sucesso!',
-                                            //timer: 1500,
+                                            timer: 1200,
                                             text: response.message,
-                                            //showConfirmButton: false,
+                                            showConfirmButton: false,
                                         })
                                     } else {
                                         console.log(response)
@@ -160,9 +160,9 @@ var App_crud = function() {
                                             //position: 'top-end',
                                             icon: 'success',
                                             title: 'Sucesso!',
-                                            //timer: 1500,
+                                            timer: 1200,
                                             text: response.message,
-                                            //showConfirmButton: false,
+                                            showConfirmButton: false,
                                         }).then((result) => {
                                             window.location.href = response.location
                                         })
@@ -339,9 +339,9 @@ var App_crud = function() {
                                             //position: 'top-end',
                                             icon: 'success',
                                             title: 'Sucesso!',
-                                            //timer: 1500,
+                                            timer: 1200,
                                             text: response.message,
-                                            //showConfirmButton: false,
+                                            showConfirmButton: false,
                                         }).then((result) => {
                                             window.location.href = response.location
                                         })
